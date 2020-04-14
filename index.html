@@ -20,9 +20,8 @@
 				
 				playerSelection = playerSelection.toLowerCase();
 				
-				if (valideInputs.indexOf(playerSelection) < 0) {
+				while (valideInputs.indexOf(playerSelection) < 0) {
 					alert(`'${playerSelection}' is not a valid input. Please enter one of the following: ['rock', 'paper', 'scissors'`);
-					return false;
 				}
 				
 				computerSelection = computerSelection.toLowerCase();
