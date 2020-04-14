@@ -16,7 +16,15 @@
 
 			function play(playerSelection, computerSelection)
 			{
+				valideInputs = ['rock', 'paper', 'scissors'];
+				
 				playerSelection = playerSelection.toLowerCase();
+				
+				if (valideIputs.indexOf(playerSelection) < 0) {
+					alert(`'${playerSelection}' is not a valid input. Please enter one of the following: ['rock', 'paper', 'scissors'`);
+					return false;
+				}
+				
 				computerSelection = computerSelection.toLowerCase();
 
 				if (
