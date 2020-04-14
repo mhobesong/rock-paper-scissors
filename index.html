@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <html charset="utf-8">
@@ -22,6 +23,8 @@
 				
 				while (valideInputs.indexOf(playerSelection) < 0) {
 					alert(`'${playerSelection}' is not a valid input. Please enter one of the following: ['rock', 'paper', 'scissors'`);
+					var playerSelection = prompt("Please enter your choise: ['rock', 'paper', 'scissors']");
+					playerSelection = playerSelection.toLowerCase();
 				}
 				
 				computerSelection = computerSelection.toLowerCase();
